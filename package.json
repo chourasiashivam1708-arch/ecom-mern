@@ -1,0 +1,18 @@
+{
+  "name": "bestshop-fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install" : "cd backend && npm install && cd ../frontend && npm install",
+    "dev:server": "cd backend && npm run dev",
+    "dev:client" : "cd frontend && npm start",
+    "dev" : "concurrently \"npm run dev:server\" \"npm run dev:client\" ",
+    "build" : "cd frontend && npm run build"
+  },
+  "author": "Shivam Chourasia",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
