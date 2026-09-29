@@ -22,7 +22,7 @@ const sendVerificationOtp = async (user, name) => {
     await user.save();
 
     const message = `
-        <h2>Welcome to ShopNest, ${name}!</h2>
+        <h2>Welcome to BestShop, ${name}!</h2>
         <p>Thank you for registering on our platform.</p>
         <p>Your account verification OTP is: <strong>${otp}</strong></p>
         <p>This OTP expires in 10 minutes.</p>
@@ -30,7 +30,7 @@ const sendVerificationOtp = async (user, name) => {
 
     await sendEmail({
         email: user.email,
-        subject: 'ShopNest Account Verification OTP',
+        subject: 'BestShop Account Verification OTP',
         message
     });
 };

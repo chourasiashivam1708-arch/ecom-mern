@@ -10,10 +10,11 @@ const router = express.Router();
 const {admin} = require('../middleware/adminMiddleware');
 const {protect} = require('../middleware/authMiddleware');
 
-const {addOrderItems,getOrders, getMyOrders, updateOrderStatus} = require('../controllers/orderController');
+const {getOrders, getMyOrders, updateOrderStatus} = require('../controllers/orderController');
 
-router.route('/').post(protect,addOrderItems).get(protect , admin , getOrders); 
-router.route('/myorders').get(protect,getMyOrders); 
+// NEW: Orders are now created only by verified payment/reservation code in paymentController.
+router.route('/').get(protect, admin, getOrders);
+router.route('/myorders').get(protect, getMyOrders);
 router.route('/:id/status').put(protect,admin,updateOrderStatus);
 
-module.exports = router;     
+module.exports = router;
