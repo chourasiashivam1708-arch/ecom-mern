@@ -1,0 +1,51 @@
+:root {
+  /*
+    Forest Mint Theme
+
+    Dark Forest: #091413
+    Deep Green: #285A48
+    Emerald Green: #408A71
+    Mint Green: #B0E4CC
+  */
+
+  --color-primary: #285A48;
+  --color-secondary: #B0E4CC;
+  --color-background: #F7FCF9;
+  --color-text: #091413;
+  --color-cta: #408A71;
+
+  --color-cta-hover: #36755F;
+  --color-cta-active: #285A48;
+
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F0F9F4;
+
+  --color-border: #D5EFE2;
+
+  --color-text-muted: #4A6A60;
+  --color-heading-muted: #365146;
+
+  --color-danger: #DC3545;
+  --color-danger-soft: rgba(220, 53, 69, 0.10);
+  --color-danger-border: rgba(220, 53, 69, 0.25);
+
+  --color-highlight: #B0E4CC;
+
+  --color-success: #16A34A;
+  --color-success-soft: rgba(22, 163, 74, 0.12);
+
+  --color-info: #2563EB;
+  --color-info-soft: rgba(37, 99, 235, 0.12);
+
+  --color-warning: #D97706;
+  --color-warning-soft: rgba(217, 119, 6, 0.12);
+
+  --shadow-soft: 0 4px 20px rgba(40, 90, 72, 0.08);
+  --shadow-strong: 0 10px 40px rgba(40, 90, 72, 0.15);
+
+  --shadow-cta: 0 4px 14px rgba(64, 138, 113, 0.25);
+  --shadow-cta-hover: 0 6px 20px rgba(64, 138, 113, 0.35);
+
+  --overlay-primary-soft: rgba(40, 90, 72, 0.08);
+  --overlay-border-soft: rgba(40, 90, 72, 0.12);
+}

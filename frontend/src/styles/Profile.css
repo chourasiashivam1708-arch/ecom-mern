@@ -1,0 +1,177 @@
+.profile-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.profile-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile-title {
+  color: var(--color-text);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.profile-text {
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.profile-badge {
+  background: var(--overlay-primary-soft);
+  color: var(--color-primary);
+  border: 1px solid var(--overlay-border-soft);
+
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.logout-btn {
+  background: var(--color-cta);
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: var(--color-cta-hover);
+  transform: translateY(-1px);
+}
+
+.orders-title {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.loading-card,
+.empty-card,
+.order-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.loading-card {
+  border-radius: 16px;
+  padding: 30px;
+  color: var(--color-text-muted);
+}
+
+.empty-card {
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+}
+
+.empty-card h3 {
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.empty-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.orders-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.order-card {
+  border-radius: 16px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.order-label {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.order-id {
+  color: var(--color-text);
+  font-weight: 600;
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+
+.order-date {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.order-total {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.status-pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-delivered {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.status-shipped {
+  background: var(--color-info-soft);
+  color: var(--color-info);
+}
+
+.status-pending {
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logout-btn {
+    width: 100%;
+    
+  }
+}
